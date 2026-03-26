@@ -156,10 +156,10 @@ export default async function ServiceDetail({ params }) {
 
                             {/* Advanced Capabilities - Modern Grid */}
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 uppercase tracking-wider">
+                                <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 uppercase tracking-wider cursor-pointer brand-card-trigger">
                                     Core Ecosystem Components
                                 </h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 cursor-pointer brand-card-trigger">
                                     {service.details.map((detail, index) => (
                                         <div key={index} className="flex items-center gap-5 p-6 rounded-3xl bg-white border border-gray-100 hover:border-[#1e40af] hover:translate-x-2 transition-all group shadow-sm hover:shadow-xl hover:shadow-blue-500/5 cursor-pointer brand-card-trigger">
                                             <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-[#1e40af] group-hover:bg-[#1e40af] group-hover:text-white transition-all transform group-hover:rotate-12">
@@ -193,11 +193,11 @@ export default async function ServiceDetail({ params }) {
 
                             {/* Technology DNA */}
                             <div className="text-center pt-8">
-                                <h3 className="text-2xl font-black text-slate-900 mb-10 flex items-center justify-center gap-4 uppercase tracking-widest">
+                                <h3 className="text-2xl font-black text-slate-900 mb-10 flex items-center justify-center gap-4 uppercase tracking-widest cursor-pointer brand-card-trigger">
                                     <Cpu size={28} className="text-[#1e40af]" />
                                     Technology Stack DNA
                                 </h3>
-                                <div className="flex flex-wrap justify-center gap-4">
+                                <div className="flex flex-wrap justify-center gap-4 cursor-pointer brand-card-trigger">
                                     {service.technologies.map((tech, index) => (
                                         <div key={index} className="px-8 py-4 bg-white border-2 border-slate-100 rounded-2xl font-black text-slate-700 hover:border-[#1e40af] hover:text-[#1e40af] transition-all cursor-pointer brand-card-trigger shadow-md hover:shadow-glow-sm hover:-translate-y-1">
                                             {tech}
