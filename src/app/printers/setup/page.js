@@ -296,7 +296,7 @@ export default function PrinterSetupPage() {
           </div>
           
           <p className="text-slate-400 text-sm font-medium">
-            © {new Date().getFullYear()} PrinterAssist. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Cross City. All rights reserved.
           </p>
         </div>
       </footer>
