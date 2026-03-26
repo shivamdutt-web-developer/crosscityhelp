@@ -199,7 +199,7 @@ export default async function ServiceDetail({ params }) {
                                 </h3>
                                 <div className="flex flex-wrap justify-center gap-4">
                                     {service.technologies.map((tech, index) => (
-                                        <div key={index} className="px-8 py-4 bg-white border-2 border-slate-100 rounded-2xl font-black text-slate-700 hover:border-[#1e40af] hover:text-[#1e40af] transition-all cursor-default shadow-md hover:shadow-glow-sm hover:-translate-y-1">
+                                        <div key={index} className="px-8 py-4 bg-white border-2 border-slate-100 rounded-2xl font-black text-slate-700 hover:border-[#1e40af] hover:text-[#1e40af] transition-all cursor-pointer brand-card-trigger shadow-md hover:shadow-glow-sm hover:-translate-y-1">
                                             {tech}
                                         </div>
                                     ))}
