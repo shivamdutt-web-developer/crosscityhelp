@@ -8,6 +8,7 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        phone: "",
         subject: "Full-Stack Web Development",
         message: ""
     });
@@ -45,11 +46,22 @@ export default function Contact() {
         setStatus({ submitting: true, info: { error: false, msg: "" } });
 
         try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            setStatus({ submitting: false, info: { error: false, msg: "Technical request transmitted. A senior partner will contact you shortly." } });
-            setFormData({ name: "", email: "", subject: "Full-Stack Web Development", message: "" });
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus({ submitting: false, info: { error: false, msg: "Technical request transmitted. A senior partner will contact you shortly." } });
+                setFormData({ name: "", email: "", phone: "", subject: "Full-Stack Web Development", message: "" });
+            } else {
+                setStatus({ submitting: false, info: { error: true, msg: data.error || "Transmission failure. Please use direct email support." } });
+            }
         } catch (err) {
-            setStatus({ submitting: false, info: { error: true, msg: "Transmission failure. Please use direct email support." } });
+            setStatus({ submitting: false, info: { error: true, msg: "Transmission failure. Please check your connection." } });
         }
     };
 
@@ -166,6 +178,17 @@ export default function Contact() {
                                                 onChange={handleChange}
                                                 className={`w-full bg-slate-50 border-2 ${errors.email ? 'border-red-100' : 'border-transparent'} rounded-2xl px-6 py-4 text-gray-900 focus:ring-4 focus:ring-blue-100 focus:bg-white outline-none transition-all font-bold placeholder-gray-300`}
                                                 placeholder="Enter corporate email"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="text-xs font-black text-gray-400 uppercase tracking-widest px-1">Phone Number</label>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+                                                className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-4 text-gray-900 focus:ring-4 focus:ring-blue-100 focus:bg-white outline-none transition-all font-bold placeholder-gray-300"
+                                                placeholder="Enter phone number"
                                             />
                                         </div>
                                     </div>

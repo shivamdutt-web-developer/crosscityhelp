@@ -25,7 +25,7 @@ export async function POST(req) {
         // Setup email data
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_USER, // Sending it to the site owner's email
+            to: "support@crosscityhelp.com", // Sending to official support mail
             replyTo: email,
             subject: `New Contact Form Submission from ${name}`,
             html: `
