@@ -154,8 +154,8 @@ export default function Contact() {
                                                 value={formData.name}
                                                 onChange={handleChange}
                                                 className={`w-full bg-slate-50 border-2 ${errors.name ? 'border-red-100' : 'border-transparent'} rounded-2xl px-6 py-4 text-gray-900 focus:ring-4 focus:ring-blue-100 focus:bg-white outline-none transition-all font-bold placeholder-gray-300`}
-                                                placeholder="John Doe"
-                                            />
+                                                placeholder="Enter legal name"
+                                       />
                                         </div>
                                         <div className="space-y-2">
                                             <label className="text-xs font-black text-gray-400 uppercase tracking-widest px-1">Corporate Email</label>
@@ -165,7 +165,7 @@ export default function Contact() {
                                                 value={formData.email}
                                                 onChange={handleChange}
                                                 className={`w-full bg-slate-50 border-2 ${errors.email ? 'border-red-100' : 'border-transparent'} rounded-2xl px-6 py-4 text-gray-900 focus:ring-4 focus:ring-blue-100 focus:bg-white outline-none transition-all font-bold placeholder-gray-300`}
-                                                placeholder="project@enterprise.com"
+                                                placeholder="Enter corporate email"
                                             />
                                         </div>
                                     </div>

@@ -109,7 +109,7 @@ export default function PrinterSetupPage() {
               <Search className="ml-4 text-slate-400" />
               <input 
                 type="text" 
-                placeholder="Enter printer model number (e.g., HP OfficeJet Pro 9015)" 
+                placeholder="Enter printer model number" 
                 className="w-full px-4 py-4 focus:outline-none text-lg text-slate-700 bg-transparent font-medium"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
