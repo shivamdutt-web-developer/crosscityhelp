@@ -3,8 +3,13 @@ import { useEffect } from 'react';
 
 export default function ChatTrigger() {
   useEffect(() => {
+    const handleGlobalClick = (e) => {
+      // Find the closest clickable element (links, buttons, or custom triggers)
+      const target = e.target.closest('a, button, [role="button"], .brand-card-trigger');
+      if (!target) return;
+
       // Check if it's in a Navbar (Header) or Footer
-      const isNavOrFooter = target.closest('nav, footer') || target.closest('header') || target.closest('.z-50'); // Added .z-50 for TopBar
+      const isNavOrFooter = target.closest('nav, footer') || target.closest('header') || target.closest('.z-50');
 
       const isBlankLink = target.tagName === 'A' && (
         target.getAttribute('href') === '#' || 
