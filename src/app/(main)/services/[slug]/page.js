@@ -229,7 +229,7 @@ export default async function ServiceDetail({ params }) {
                                             </div>
                                             <div>
                                                 <p className="text-xs text-blue-200/60 font-black uppercase tracking-[0.2em]">Email Us</p>
-                                                <p className="text-base font-black">contact@crosscity.com</p>
+                                                <p className="text-base font-black text-white">support@crosscityhelp.com</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-5 group/item cursor-pointer">
@@ -238,7 +238,7 @@ export default async function ServiceDetail({ params }) {
                                             </div>
                                             <div>
                                                 <p className="text-xs text-blue-200/60 font-black uppercase tracking-[0.2em]">Contact Direct</p>
-                                                <p className="text-base font-black">+91 99999 99999</p>
+                                                <p className="text-base font-black text-white">+1 (226) 319-17078</p>
                                             </div>
                                         </div>
                                     </div>

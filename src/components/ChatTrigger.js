@@ -27,7 +27,7 @@ export default function ChatTrigger() {
       const isChatButton = target.tagName === 'BUTTON' && (
         target.innerText.toLowerCase().includes('chat') || 
         target.dataset.chat === 'true'
-      );
+      ) || (target.tagName === 'A' && target.innerText.toLowerCase().includes('launch project'));
 
       // Specific for our brand cards which don't have links yet
       const isBrandCard = target.classList.contains('brand-card-trigger');
