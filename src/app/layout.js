@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import ChatTrigger from "@/components/ChatTrigger";
 // Root layout shell
 
 const geistSans = Geist({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
+        <ChatTrigger />
         {children}
         <Script src="//code.jivosite.com/widget/Kh9JPJLiMo" strategy="lazyOnload" />
       </body>

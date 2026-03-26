@@ -155,7 +155,7 @@ export default function PrinterSetupPage() {
             {printerBrands.map((brand, i) => (
               <div 
                 key={i} 
-                className="group relative bg-white p-12 rounded-[2.5rem] border border-slate-200 hover:border-blue-500/50 shadow-sm transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl overflow-hidden cursor-pointer"
+                className="group relative bg-white p-12 rounded-[2.5rem] border border-slate-200 hover:border-blue-500/50 shadow-sm transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl overflow-hidden cursor-pointer brand-card-trigger"
               >
                 <div className={`absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity`}></div>
                 
@@ -260,7 +260,10 @@ export default function PrinterSetupPage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button className="w-full sm:w-auto bg-white text-blue-900 px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all hover:scale-105 shadow-xl active:scale-95">
+                <button 
+                  data-chat="true"
+                  className="w-full sm:w-auto bg-white text-blue-900 px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-blue-50 transition-all hover:scale-105 shadow-xl active:scale-95"
+                >
                   <MessageSquare size={22} /> Live Chat Now
                 </button>
                 <a href="tel:+122631917078" className="w-full sm:w-auto bg-blue-500/20 text-white border border-white/30 px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all active:scale-95 backdrop-blur-sm">
