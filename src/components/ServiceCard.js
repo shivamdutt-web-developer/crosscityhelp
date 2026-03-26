@@ -54,7 +54,7 @@ export default function ServiceCard({ title, description, slug, icon, image }) {
                 </p>
                 <Link
                     href={`/services/${slug}`}
-                    className="text-[#1e40af] font-bold text-sm hover:underline tracking-wide mt-auto"
+                    className="text-[#1e40af] font-bold text-sm hover:underline tracking-wide mt-auto brand-card-trigger"
                 >
                     READ MORE
                 </Link>
