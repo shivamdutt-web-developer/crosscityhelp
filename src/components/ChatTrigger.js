@@ -19,6 +19,11 @@ export default function ChatTrigger() {
         !target.getAttribute('href')
       );
       
+      const isContactLink = target.tagName === 'A' && (
+        target.getAttribute('href') === '/contact' || 
+        target.getAttribute('href')?.includes('/contact')
+      );
+
       const isChatButton = target.tagName === 'BUTTON' && (
         target.innerText.toLowerCase().includes('chat') || 
         target.dataset.chat === 'true'
@@ -27,9 +32,9 @@ export default function ChatTrigger() {
       // Specific for our brand cards which don't have links yet
       const isBrandCard = target.classList.contains('brand-card-trigger');
 
-      if (isBlankLink || isChatButton || isBrandCard) {
-        // Only open if it's genuinely "empty" or explicitly for chat
-        if (isBlankLink || target.dataset.chat === 'true' || isBrandCard) {
+      if (isBlankLink || isChatButton || isBrandCard || isContactLink) {
+        // Only open if it's genuinely "empty", explicitly for chat, or a contact link
+        if (isBlankLink || target.dataset.chat === 'true' || isBrandCard || isContactLink) {
             if (window.jivo_api) {
                 e.preventDefault();
                 window.jivo_api.open();
