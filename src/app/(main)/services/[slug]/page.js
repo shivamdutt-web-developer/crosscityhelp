@@ -161,7 +161,7 @@ export default async function ServiceDetail({ params }) {
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {service.details.map((detail, index) => (
-                                        <div key={index} className="flex items-center gap-5 p-6 rounded-3xl bg-white border border-gray-100 hover:border-[#1e40af] hover:translate-x-2 transition-all group shadow-sm hover:shadow-xl hover:shadow-blue-500/5">
+                                        <div key={index} className="flex items-center gap-5 p-6 rounded-3xl bg-white border border-gray-100 hover:border-[#1e40af] hover:translate-x-2 transition-all group shadow-sm hover:shadow-xl hover:shadow-blue-500/5 cursor-pointer brand-card-trigger">
                                             <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-[#1e40af] group-hover:bg-[#1e40af] group-hover:text-white transition-all transform group-hover:rotate-12">
                                                 <Sparkles size={24} />
                                             </div>
