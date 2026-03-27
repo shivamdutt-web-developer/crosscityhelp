@@ -88,39 +88,57 @@ export default function PrinterSetupPage() {
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-400/10 rounded-full blur-[150px] -z-10"></div>
 
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-8 animate-bounce">
-            <ShieldCheck size={16} />
-            <span>Secure Official Drivers & Software</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight leading-[1.1]">
-            Setup Your Printer <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">In T-Minus 2 Minutes</span>
-          </h1>
-          
-          <p className="max-w-2xl mx-auto text-xl text-slate-600 mb-12 leading-relaxed">
-            Download professional drivers, software, and firmware for all major brands. Get your printer running smoothly with our expert-verified setup guide.
-          </p>
-
-          <div className="max-w-2xl mx-auto relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative bg-white rounded-2xl p-2 flex items-center shadow-xl border border-slate-100">
-              <Search className="ml-4 text-slate-400" />
-              <input 
-                type="text" 
-                placeholder="Enter printer model number" 
-                className="w-full px-4 py-4 focus:outline-none text-lg text-slate-700 bg-transparent font-medium"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 whitespace-nowrap">
-                Start Setup
-              </button>
+        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="text-center lg:text-left flex-1">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-8 animate-bounce">
+              <ShieldCheck size={16} />
+              <span>Secure Official Drivers & Software</span>
             </div>
-            <p className="mt-4 text-sm text-slate-500 font-medium">
-              Model number is usually located on the front or back of your device.
+            
+            <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight leading-[1.1]">
+              Setup Your Printer <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">In T-Minus 2 Minutes</span>
+            </h1>
+            
+            <p className="max-w-2xl mx-auto lg:mx-0 text-xl text-slate-600 mb-12 leading-relaxed">
+              Download professional drivers, software, and firmware for all major brands. Get your printer running smoothly with our expert-verified setup guide.
             </p>
+
+            <div className="max-w-2xl mx-auto lg:mx-0 relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white rounded-2xl p-2 flex items-center shadow-xl border border-slate-100">
+                <Search className="ml-4 text-slate-400" />
+                <input 
+                  type="text" 
+                  placeholder="Enter printer model number" 
+                  className="w-full px-4 py-4 focus:outline-none text-lg text-slate-700 bg-transparent font-medium"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 whitespace-nowrap">
+                  Start Setup
+                </button>
+              </div>
+              <p className="mt-4 text-sm text-slate-500 font-medium">
+                Model number is usually located on the front or back of your device.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Side Prominent Phone Badge */}
+          <div className="hidden lg:block animate-fade-in-right">
+            <a 
+              href="tel:+12263191708" 
+              className="group flex items-center gap-6 bg-white/10 backdrop-blur-xl border border-white/30 p-4 pl-4 pr-12 rounded-[2.5rem] hover:bg-white/20 transition-all shadow-2xl hover:scale-105 active:scale-95 border-b-4 border-blue-500/50"
+            >
+              <div className="w-16 h-16 rounded-[1.5rem] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white shadow-xl group-hover:rotate-12 transition-transform">
+                <PhoneCall size={32} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-blue-100/60 text-xs font-black uppercase tracking-[0.2em] mb-1">Expert Helpline</span>
+                <span className="text-3xl xl:text-4xl font-black text-white tracking-tighter">+1 (226) 319-1708</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
