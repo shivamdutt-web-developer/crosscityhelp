@@ -289,9 +289,6 @@ export default function PrinterSetupPage() {
                 </a>
               </div>
               
-              <p className="mt-8 text-blue-200/60 font-medium text-sm">
-                *Toll Free Number. Average wait time under 30 seconds.
-              </p>
             </div>
           </div>
         </div>
