@@ -5,16 +5,16 @@ export default function HeroPhoneBadge() {
   return (
     <>
       {/* Desktop badge - right side of hero */}
-      <div className="hidden lg:block animate-fade-in-right shrink-0">
+      <div className="hidden lg:block animate-fade-in-right shrink-0 ml-4">
         <a 
           href="tel:+12263191708" 
-          className="group flex items-center gap-6 xl:gap-10 bg-white/10 backdrop-blur-xl border border-white/30 p-5 xl:p-8 pl-6 xl:pl-8 pr-10 xl:pr-16 rounded-[2.5rem] xl:rounded-[3rem] hover:bg-white/20 transition-all shadow-2xl hover:scale-105 active:scale-95 border-b-4 xl:border-b-8 border-white/20"
+          className="group flex items-center gap-6 xl:gap-10 bg-white/10 backdrop-blur-xl border border-white/30 p-5 xl:p-10 pl-6 xl:pl-10 pr-12 xl:pr-20 rounded-[2.5rem] xl:rounded-[3.5rem] hover:bg-white/20 transition-all shadow-2xl hover:scale-105 active:scale-95 border-b-4 xl:border-b-8 border-white/20"
         >
-          <div className="w-14 h-14 xl:w-20 xl:h-20 rounded-2xl xl:rounded-3xl bg-blue-600 flex items-center justify-center text-white shadow-2xl group-hover:rotate-12 transition-transform">
-            <PhoneCall className="w-8 h-8 xl:w-12 xl:h-12" />
+          <div className="w-14 h-14 xl:w-24 xl:h-24 rounded-2xl xl:rounded-[2rem] bg-blue-600 flex items-center justify-center text-white shadow-2xl group-hover:rotate-12 transition-transform">
+            <PhoneCall className="w-8 h-8 xl:w-14 xl:h-14" />
           </div>
           <div className="flex flex-col">
-            <span className="text-blue-200/80 text-[10px] xl:text-sm font-black uppercase tracking-[0.3em] xl:tracking-[0.4em] mb-1 xl:mb-2 drop-shadow-sm">Priority Helpline</span>
+            <span className="text-blue-200/80 text-[10px] xl:text-sm font-black uppercase tracking-[0.3em] xl:tracking-[0.4em] mb-1 xl:mb-3 drop-shadow-sm">Priority Helpline</span>
             <span className="text-3xl xl:text-5xl 2xl:text-6xl font-black text-white tracking-tighter whitespace-nowrap drop-shadow-2xl font-sans">+1 (226) 319-1708</span>
           </div>
         </a>

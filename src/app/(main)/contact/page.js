@@ -73,7 +73,7 @@ export default function Contact() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1e40af]/95 via-[#1e3a8a]/90 to-[#15803d]/90 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/digital-marketing.jpg')] bg-cover bg-center mix-blend-overlay z-0 scale-110 opacity-30" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
                     <div className="text-center lg:text-left flex-1">
                         <h2 className="text-blue-400 text-xs sm:text-sm font-black tracking-[0.4em] uppercase mb-3 sm:mb-5 drop-shadow-lg">Global Intake</h2>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 tracking-tight drop-shadow-2xl uppercase">Initialize Consultation</h1>

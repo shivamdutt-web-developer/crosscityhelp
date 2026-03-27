@@ -86,7 +86,7 @@ export default async function ServiceDetail({ params }) {
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(30,64,175,0.4),transparent)]" />
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                         <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1">
                             <Link 
