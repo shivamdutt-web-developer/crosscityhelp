@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { PhoneCall, Maximize2, Mail } from "lucide-react";
+import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 export default function Gallery() {
     // Gallery State for filtering

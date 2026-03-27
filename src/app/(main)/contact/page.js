@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Send, MessageSquare, Clock, ShieldCheck, Globe, Zap, CheckCircle2, Headphones, ShieldAlert, Database, FileText, LifeBuoy } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageSquare, Clock, ShieldCheck, Globe, Zap, CheckCircle2, Headphones, ShieldAlert, Database, FileText, LifeBuoy, PhoneCall } from "lucide-react";
+import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
