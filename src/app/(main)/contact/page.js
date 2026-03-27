@@ -72,14 +72,18 @@ export default function Contact() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1e40af]/95 via-[#1e3a8a]/90 to-[#15803d]/90 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/digital-marketing.jpg')] bg-cover bg-center mix-blend-overlay z-0 scale-110 opacity-30" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
-                    <h2 className="text-blue-400 text-sm font-black tracking-[0.5em] uppercase mb-6 drop-shadow-lg">Global Intake</h2>
-                    <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight drop-shadow-2xl uppercase">Initialize Consultation</h1>
-                    <div className="flex items-center justify-center gap-3 text-gray-300 text-sm md:text-base font-bold tracking-widest uppercase bg-black/20 backdrop-blur-md w-fit mx-auto px-6 py-2 rounded-full border border-white/10">
-                        <Link href="/" className="hover:text-blue-400 transition-colors">Home</Link>
-                        <span className="text-white/30">•</span>
-                        <span className="text-white">Contact Tier-1 Support</span>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div className="text-center lg:text-left flex-1">
+                        <h2 className="text-blue-400 text-sm font-black tracking-[0.5em] uppercase mb-6 drop-shadow-lg">Global Intake</h2>
+                        <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight drop-shadow-2xl uppercase">Initialize Consultation</h1>
+                        <div className="flex items-center justify-center lg:justify-start gap-3 text-gray-300 text-sm md:text-base font-bold tracking-widest uppercase bg-black/20 backdrop-blur-md w-fit mx-auto lg:mx-0 px-6 py-2 rounded-full border border-white/10">
+                            <Link href="/" className="hover:text-blue-400 transition-colors">Home</Link>
+                            <span className="text-white/30">•</span>
+                            <span className="text-white">Contact Tier-1 Support</span>
+                        </div>
                     </div>
+
+                    <HeroPhoneBadge />
                 </div>
             </section>
 

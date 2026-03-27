@@ -86,29 +86,34 @@ export default async function ServiceDetail({ params }) {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                    <div className="flex flex-col items-center text-center">
-                        <Link 
-                            href="/services" 
-                            className="group mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95"
-                        >
-                            <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                            <span className="font-bold tracking-wide text-sm">Explore All Solutions</span>
-                        </Link>
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1">
+                            <Link 
+                                href="/services" 
+                                className="group mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95"
+                            >
+                                <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+                                <span className="font-bold tracking-wide text-sm">Explore All Solutions</span>
+                            </Link>
 
-                        {/* Glassmorphism Title Card */}
-                        <div className="relative p-10 md:p-16 rounded-[3rem] bg-white/5 backdrop-blur-lg border border-white/10 shadow-2xl animate-in fade-in zoom-in duration-1000">
-                             <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 rounded-3xl bg-gradient-to-br from-[#1e40af] to-[#15803d] shadow-2xl flex items-center justify-center text-white p-5 animate-bounce-slow">
-                                {IconComponent && <IconComponent className="w-full h-full" />}
+                            {/* Glassmorphism Title Card */}
+                            <div className="relative p-10 md:p-16 rounded-[3rem] bg-white/5 backdrop-blur-lg border border-white/10 shadow-2xl animate-in fade-in zoom-in duration-1000">
+                                <div className="absolute -top-12 left-1/2 lg:left-16 -translate-x-1/2 lg:translate-x-0 w-24 h-24 rounded-3xl bg-gradient-to-br from-[#1e40af] to-[#15803d] shadow-2xl flex items-center justify-center text-white p-5 animate-bounce-slow">
+                                    {IconComponent && <IconComponent className="w-full h-full" />}
+                                </div>
+                                
+                                <h1 className="mt-8 text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight drop-shadow-2xl">
+                                    {service.title}
+                                </h1>
+                                <div className="w-32 h-1.5 bg-gradient-to-r from-[#1e40af] to-[#15803d] mx-auto lg:mx-0 rounded-full mb-8 shadow-glow" />
+                                <p className="max-w-2xl text-lg md:text-xl text-blue-100/80 font-medium leading-relaxed mx-auto lg:mx-0">
+                                    {service.description}
+                                </p>
                             </div>
-                            
-                            <h1 className="mt-8 text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight drop-shadow-2xl">
-                                {service.title}
-                            </h1>
-                            <div className="w-32 h-1.5 bg-gradient-to-r from-[#1e40af] to-[#15803d] mx-auto rounded-full mb-8 shadow-glow" />
-                            <p className="max-w-2xl text-lg md:text-xl text-blue-100/80 font-medium leading-relaxed">
-                                {service.description}
-                            </p>
                         </div>
+
+                         {/* Right Side Phone Badge */}
+                         <HeroPhoneBadge />
                     </div>
                 </div>
             </section>

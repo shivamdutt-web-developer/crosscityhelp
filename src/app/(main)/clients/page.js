@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PhoneCall, Shield, Clock, TrendingUp, Mail, Building, Factory, Stethoscope, GraduationCap, CheckCircle2 } from "lucide-react";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { testimonialsData } from "@/data/testimonials";
+import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 export const metadata = {
     title: "Our Clients | Cross City",
@@ -16,13 +17,17 @@ export default function Clients() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1e40af]/85 to-[#15803d]/85 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/img-1556761175-5973dc0f32b7.jpg')] bg-cover bg-center mix-blend-overlay z-0" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
-                    <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Our Clients</h1>
-                    <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base font-medium tracking-widest uppercase">
-                        <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                        <span className="text-[#1e40af]">/</span>
-                        <span className="text-white">Clients</span>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div className="text-center lg:text-left flex-1">
+                        <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Our Clients</h1>
+                        <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300 text-sm md:text-base font-medium tracking-widest uppercase text-shadow-sm">
+                            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                            <span className="text-white">/</span>
+                            <span className="text-white">Clients</span>
+                        </div>
                     </div>
+
+                    <HeroPhoneBadge />
                 </div>
             </section>
 

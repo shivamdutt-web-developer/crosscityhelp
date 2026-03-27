@@ -4,6 +4,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { services } from "@/data/services";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { testimonialsData } from "@/data/testimonials";
+import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 export default function Home() {
   // Take top 6 services for the homepage
@@ -48,20 +49,7 @@ export default function Home() {
               </div>
 
               {/* Right Side Phone Badge */}
-              <div className="hidden lg:block animate-fade-in-right">
-                <a 
-                  href="tel:+12263191708" 
-                  className="group flex flex-col items-center gap-4 bg-white/10 backdrop-blur-2xl border border-white/20 p-8 rounded-[3rem] hover:bg-white/20 transition-all shadow-3xl hover:scale-105"
-                >
-                  <div className="w-20 h-20 rounded-3xl bg-blue-600 flex items-center justify-center text-white shadow-2xl group-hover:rotate-6 transition-transform">
-                    <PhoneCall size={40} />
-                  </div>
-                  <div className="text-center">
-                    <span className="block text-blue-200 text-xs font-black uppercase tracking-[0.3em] mb-2">Priority Helpline</span>
-                    <span className="text-3xl font-black text-white tracking-tighter whitespace-nowrap">+1 (226) 319-1708</span>
-                  </div>
-                </a>
-              </div>
+              <HeroPhoneBadge />
             </div>
           </div>
         </div>
