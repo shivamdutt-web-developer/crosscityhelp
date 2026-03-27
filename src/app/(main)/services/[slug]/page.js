@@ -7,6 +7,7 @@ import {
     Smartphone, Layout, Layers, Shield, Repeat, Settings, Headphones, Users2, FileCheck, 
     LineChart, SmartphoneNfc, Settings2 
 } from "lucide-react";
+import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 const IconMap = {
     "Megaphone": Megaphone,
