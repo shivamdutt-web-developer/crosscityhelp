@@ -74,9 +74,9 @@ export default function PrinterSetupPage() {
             <Link href="#how-to" className="hover:text-blue-600 transition-colors">Setup Guide</Link>
             <Link href="#support" className="hover:text-blue-600 transition-colors text-blue-600 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">Live Support</Link>
           </div>
-          <a href="tel:+122631917078" className="flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-slate-800 transition-all hover:shadow-lg active:scale-95">
+          <a href="tel:+12263191708" className="flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-slate-800 transition-all hover:shadow-lg active:scale-95">
             <PhoneCall size={18} />
-            <span className="hidden sm:inline">+1 (226) 319-17078</span>
+            <span className="hidden sm:inline">+1 (226) 319-1708</span>
           </a>
         </div>
       </nav>
@@ -266,8 +266,8 @@ export default function PrinterSetupPage() {
                 >
                   <MessageSquare size={22} /> Live Chat Now
                 </button>
-                <a href="tel:+122631917078" className="w-full sm:w-auto bg-blue-500/20 text-white border border-white/30 px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all active:scale-95 backdrop-blur-sm">
-                  <PhoneCall size={22} /> +1 (226) 319-17078
+                <a href="tel:+12263191708" className="w-full sm:w-auto bg-blue-500/20 text-white border border-white/30 px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all active:scale-95 backdrop-blur-sm">
+                  <PhoneCall size={22} /> +1 (226) 319-1708
                 </a>
               </div>
               

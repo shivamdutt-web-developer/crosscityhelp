@@ -101,7 +101,7 @@ export default function Contact() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 {[
                                     { icon: Mail, title: "Direct Intake", sub: "24/7 Monitoring", val: "support@crosscityhelp.com" },
-                                    { icon: Phone, title: "Technical Line", sub: "Mon-Sat Execution", val: "+1 (226) 319-17078" },
+                                    { icon: Phone, title: "Technical Line", sub: "Mon-Sat Execution", val: "+1 (226) 319-1708" },
                                     { icon: MapPin, title: "HQ Hub", sub: "New Delhi, India", val: "Silicon-Tier Tech Center" },
                                     { icon: Clock, title: "SLA Response", sub: "Guaranteed Feedback", val: "Within 120 Minutes" }
                                 ].map((item, i) => (

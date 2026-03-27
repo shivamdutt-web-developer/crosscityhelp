@@ -122,7 +122,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <span className="block text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Call Anytime</span>
-                                    <a href="tel:+122631917078" className="text-white hover:text-blue-400 transition-colors text-sm font-medium">+1 (226) 319-17078</a>
+                                    <a href="tel:+12263191708" className="text-white hover:text-blue-400 transition-colors text-sm font-medium">+1 (226) 319-1708</a>
                                 </div>
                             </div>
                             <div className="h-px w-full bg-white/10"></div>

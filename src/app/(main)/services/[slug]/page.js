@@ -238,7 +238,7 @@ export default async function ServiceDetail({ params }) {
                                             </div>
                                             <div>
                                                 <p className="text-xs text-blue-200/60 font-black uppercase tracking-[0.2em]">Contact Direct</p>
-                                                <p className="text-base font-black text-white">+1 (226) 319-17078</p>
+                                                <p className="text-base font-black text-white">+1 (226) 319-1708</p>
                                             </div>
                                         </div>
                                     </div>

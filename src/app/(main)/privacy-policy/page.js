@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
                             <div className="mt-4 p-6 bg-slate-50 border border-gray-100 rounded-sm">
                                 <p className="font-bold text-gray-900">Cross City</p>
                                 <p>Email: <a href="mailto:support@crosscityhelp.com" className="text-[#1e40af] hover:underline">support@crosscityhelp.com</a></p>
-                                <p>Phone: +1 (226) 319-17078</p>
+                                <p>Phone: +1 (226) 319-1708</p>
                             </div>
                         </div>
 
