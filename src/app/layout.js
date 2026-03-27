@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import ChatTrigger from "@/components/ChatTrigger";
+import FloatingContact from "@/components/FloatingContact";
 // Root layout shell
 
 const geistSans = Geist({
