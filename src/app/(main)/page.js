@@ -19,8 +19,8 @@ export default function Home() {
 
         <div className="relative z-10 w-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-              <div className="w-full max-w-3xl bg-black/40 p-5 sm:p-8 md:p-12 lg:p-16 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10 xl:gap-12">
+              <div className="w-full max-w-xl xl:max-w-3xl bg-black/40 p-5 sm:p-8 md:p-12 lg:p-14 xl:p-16 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
                 <h2 className="text-[#3b82f6] text-sm sm:text-base md:text-lg font-bold tracking-[0.2em] mb-3 sm:mb-5 uppercase drop-shadow-lg">
                   The Zenith of Tech Engineering
                 </h2>

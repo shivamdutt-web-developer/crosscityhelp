@@ -103,7 +103,7 @@ export default async function ServiceDetail({ params }) {
                                     {IconComponent && <IconComponent className="w-full h-full" />}
                                 </div>
                                 
-                                <h1 className="mt-8 text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight drop-shadow-2xl">
+                                <h1 className="mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 uppercase tracking-tight drop-shadow-2xl">
                                     {service.title}
                                 </h1>
                                 <div className="w-32 h-1.5 bg-gradient-to-r from-[#1e40af] to-[#15803d] mx-auto lg:mx-0 rounded-full mb-8 shadow-glow" />
