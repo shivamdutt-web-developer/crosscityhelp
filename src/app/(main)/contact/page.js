@@ -47,7 +47,7 @@ export default function Contact() {
         setStatus({ submitting: true, info: { error: false, msg: "" } });
 
         try {
-            const response = await fetch("/api/contact", {
+            const response = await fetch("/contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -55,11 +55,11 @@ export default function Contact() {
 
             const data = await response.json();
 
-            if (response.ok) {
-                setStatus({ submitting: false, info: { error: false, msg: "Technical request transmitted. A senior partner will contact you shortly." } });
+            if (data.status === "success") {
+                setStatus({ submitting: false, info: { error: false, msg: data.message } });
                 setFormData({ name: "", email: "", phone: "", subject: "Full-Stack Web Development", message: "" });
             } else {
-                setStatus({ submitting: false, info: { error: true, msg: data.error || "Transmission failure. Please use direct email support." } });
+                setStatus({ submitting: false, info: { error: true, msg: data.message || "Transmission failure. Please use direct email support." } });
             }
         } catch (err) {
             setStatus({ submitting: false, info: { error: true, msg: "Transmission failure. Please check your connection." } });
