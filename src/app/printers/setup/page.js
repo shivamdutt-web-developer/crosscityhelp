@@ -89,8 +89,8 @@ export default function PrinterSetupPage() {
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-400/10 rounded-full blur-[150px] -z-10"></div>
 
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-          <div className="text-center lg:text-left flex-1">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+          <div className="text-center lg:text-left flex-1 lg:max-w-xl xl:max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-6 sm:mb-8 animate-bounce">
               <ShieldCheck size={16} />
               <span>Secure Official Drivers & Software</span>

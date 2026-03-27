@@ -86,9 +86,9 @@ export default async function ServiceDetail({ params }) {
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(30,64,175,0.4),transparent)]" />
                 </div>
 
-                <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                        <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 lg:max-w-xl xl:max-w-2xl">
                             <Link 
                                 href="/services" 
                                 className="group mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95"

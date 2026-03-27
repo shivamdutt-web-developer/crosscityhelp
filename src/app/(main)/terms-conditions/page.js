@@ -14,8 +14,8 @@ export default function TermsConditions() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1e40af]/85 to-[#15803d]/85 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/img-1497366216548-37526070297c.jpg')] bg-cover bg-center mix-blend-overlay z-0" />
 
-                <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
-                    <div className="text-center lg:text-left flex-1">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16">
+                    <div className="text-center lg:text-left flex-1 lg:max-w-xl xl:max-w-2xl">
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">Terms & Conditions</h1>
                         <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300 text-xs sm:text-sm font-medium tracking-widest uppercase">
                             <Link href="/" className="hover:text-white transition-colors">Home</Link>

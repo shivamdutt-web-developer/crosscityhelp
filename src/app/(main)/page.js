@@ -18,9 +18,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/images/software-development.jpg')] bg-cover bg-center mix-blend-overlay z-0 scale-105 animate-pulse-slow" />
 
         <div className="relative z-10 w-full flex items-center">
-          <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 xl:gap-20">
-              <div className="w-full max-w-xl xl:max-w-3xl bg-black/40 p-5 sm:p-8 md:p-10 lg:p-12 xl:p-14 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
+          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+              <div className="w-full lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl bg-black/40 p-5 sm:p-8 md:p-10 lg:p-12 xl:p-14 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
                 <h2 className="text-[#3b82f6] text-sm sm:text-base md:text-lg font-bold tracking-[0.2em] mb-3 sm:mb-5 uppercase drop-shadow-lg">
                   The Zenith of Tech Engineering
                 </h2>

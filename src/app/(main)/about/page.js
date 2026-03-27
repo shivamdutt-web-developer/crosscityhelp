@@ -15,8 +15,8 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1e40af]/95 via-[#1e3a8a]/90 to-[#15803d]/90 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/saas.jpg')] bg-cover bg-center mix-blend-overlay z-0 scale-110 opacity-40" />
 
-                <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
-                    <div className="text-center lg:text-left flex-1">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16">
+                    <div className="text-center lg:text-left flex-1 lg:max-w-xl xl:max-w-2xl">
                         <h2 className="text-blue-400 text-xs sm:text-sm font-black tracking-[0.4em] uppercase mb-3 sm:mb-5 drop-shadow-lg">Corporate Profile</h2>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 tracking-tight drop-shadow-2xl">OUR TECHNICAL HERITAGE</h1>
                         <div className="flex items-center justify-center lg:justify-start gap-3 text-gray-300 text-xs sm:text-sm font-bold tracking-widest uppercase bg-black/20 backdrop-blur-md w-fit mx-auto lg:mx-0 px-5 py-2 rounded-full border border-white/10">
