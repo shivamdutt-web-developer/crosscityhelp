@@ -17,13 +17,16 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-pt-32 scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-      >
+    <html lang="en">
+      <body className="antialiased font-sans">
         <ChatTrigger />
+        <FloatingContact />
         {children}
-        <Script src="//code.jivosite.com/widget/Kh9JPJLiMo" strategy="lazyOnload" />
+        <Script
+          id="jivo-chat"
+          strategy="afterInteractive"
+          src="//code.jivosite.com/widget/Kh9JPJLiMo"
+        />
       </body>
     </html>
   );
