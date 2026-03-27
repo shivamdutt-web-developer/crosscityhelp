@@ -13,42 +13,42 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[700px] overflow-hidden bg-slate-900 border-b border-gray-800 flex items-center pt-32">
+      <section className="relative min-h-[100svh] overflow-hidden bg-slate-900 border-b border-gray-800 flex items-center pt-28 pb-12">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e40af]/90 via-[#1e3a8a]/80 to-[#15803d]/80 z-0" />
         <div className="absolute inset-0 bg-[url('/images/software-development.jpg')] bg-cover bg-center mix-blend-overlay z-0 scale-105 animate-pulse-slow" />
 
-        <div className="relative z-10 w-full h-full flex items-center">
+        <div className="relative z-10 w-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-              <div className="max-w-3xl bg-black/40 p-8 md:p-14 lg:p-20 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
-                <h2 className="text-[#3b82f6] text-lg md:text-xl font-bold tracking-[0.3em] mb-6 uppercase drop-shadow-lg">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+              <div className="w-full max-w-3xl bg-black/40 p-5 sm:p-8 md:p-12 lg:p-16 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
+                <h2 className="text-[#3b82f6] text-sm sm:text-base md:text-lg font-bold tracking-[0.2em] mb-3 sm:mb-5 uppercase drop-shadow-lg">
                   The Zenith of Tech Engineering
                 </h2>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-8">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.15] mb-5 sm:mb-8">
                   ARCHITECTING THE <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">DIGITAL FUTURE</span>
                 </h1>
-                <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl font-light">
+                <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-10 max-w-2xl font-light">
                   Cross City delivers elite-tier software engineering, AI-driven digital transformations, and high-availability cloud ecosystems. We empower global enterprises to outpace competition through radical innovation and technical precision.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
                   <Link
                     href="/services"
-                    className="bg-[#1e40af] hover:bg-blue-600 text-white px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm shadow-[0_0_20px_rgba(30,64,175,0.4)] hover:shadow-[0_0_30px_rgba(30,64,175,0.6)]"
+                    className="bg-[#1e40af] hover:bg-blue-600 text-white px-7 sm:px-10 py-3 sm:py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm shadow-[0_0_20px_rgba(30,64,175,0.4)] hover:shadow-[0_0_30px_rgba(30,64,175,0.6)]"
                   >
                     EXPLORE SOLUTIONS
                   </Link>
                   <Link
                     href="/contact"
-                    className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm"
+                    className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-7 sm:px-10 py-3 sm:py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm"
                   >
                     CONSULT AN EXPERT
                   </Link>
                 </div>
               </div>
 
-              {/* Right Side Phone Badge */}
+              {/* Right Side Phone Badge - desktop only */}
               <HeroPhoneBadge />
             </div>
           </div>

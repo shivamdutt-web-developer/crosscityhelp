@@ -83,25 +83,25 @@ export default function PrinterSetupPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden">
+      <section className="relative pt-20 pb-16 sm:pb-24 overflow-hidden">
         {/* Abstract Background Patterns */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[url('/images/printer-setup/hero-bg.png')] bg-cover bg-center opacity-10 blur-[100px]"></div>
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-400/10 rounded-full blur-[150px] -z-10"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
           <div className="text-center lg:text-left flex-1">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-8 animate-bounce">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-6 sm:mb-8 animate-bounce">
               <ShieldCheck size={16} />
               <span>Secure Official Drivers & Software</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-slate-900 mb-4 sm:mb-6 tracking-tight leading-[1.1]">
               Setup Your Printer <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">In T-Minus 2 Minutes</span>
             </h1>
             
-            <p className="max-w-2xl mx-auto lg:mx-0 text-xl text-slate-600 mb-12 leading-relaxed">
+            <p className="max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl text-slate-600 mb-8 sm:mb-12 leading-relaxed">
               Download professional drivers, software, and firmware for all major brands. Get your printer running smoothly with our expert-verified setup guide.
             </p>
 
