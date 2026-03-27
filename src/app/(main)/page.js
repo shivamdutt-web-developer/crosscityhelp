@@ -18,31 +18,49 @@ export default function Home() {
 
         <div className="relative z-10 w-full h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-3xl bg-black/40 p-8 md:p-14 lg:p-20 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
-              <h2 className="text-[#3b82f6] text-lg md:text-xl font-bold tracking-[0.3em] mb-6 uppercase drop-shadow-lg">
-                The Zenith of Tech Engineering
-              </h2>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-8">
-                ARCHITECTING THE <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">DIGITAL FUTURE</span>
-              </h1>
-              <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl font-light">
-                Cross City delivers elite-tier software engineering, AI-driven digital transformations, and high-availability cloud ecosystems. We empower global enterprises to outpace competition through radical innovation and technical precision.
-              </p>
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+              <div className="max-w-3xl bg-black/40 p-8 md:p-14 lg:p-20 rounded-2xl border-l-[6px] border-[#1e40af] backdrop-blur-xl shadow-2xl">
+                <h2 className="text-[#3b82f6] text-lg md:text-xl font-bold tracking-[0.3em] mb-6 uppercase drop-shadow-lg">
+                  The Zenith of Tech Engineering
+                </h2>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-8">
+                  ARCHITECTING THE <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">DIGITAL FUTURE</span>
+                </h1>
+                <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl font-light">
+                  Cross City delivers elite-tier software engineering, AI-driven digital transformations, and high-availability cloud ecosystems. We empower global enterprises to outpace competition through radical innovation and technical precision.
+                </p>
 
-              <div className="flex flex-col sm:flex-row gap-6">
-                <Link
-                  href="/services"
-                  className="bg-[#1e40af] hover:bg-blue-600 text-white px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm shadow-[0_0_20px_rgba(30,64,175,0.4)] hover:shadow-[0_0_30px_rgba(30,64,175,0.6)]"
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <Link
+                    href="/services"
+                    className="bg-[#1e40af] hover:bg-blue-600 text-white px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm shadow-[0_0_20px_rgba(30,64,175,0.4)] hover:shadow-[0_0_30px_rgba(30,64,175,0.6)]"
+                  >
+                    EXPLORE SOLUTIONS
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm"
+                  >
+                    CONSULT AN EXPERT
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Side Phone Badge */}
+              <div className="hidden lg:block animate-fade-in-right">
+                <a 
+                  href="tel:+12263191708" 
+                  className="group flex flex-col items-center gap-4 bg-white/10 backdrop-blur-2xl border border-white/20 p-8 rounded-[3rem] hover:bg-white/20 transition-all shadow-3xl hover:scale-105"
                 >
-                  EXPLORE SOLUTIONS
-                </Link>
-                <Link
-                  href="/contact"
-                  className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-10 py-4 font-black tracking-widest text-sm transition-all text-center rounded-sm"
-                >
-                  CONSULT AN EXPERT
-                </Link>
+                  <div className="w-20 h-20 rounded-3xl bg-blue-600 flex items-center justify-center text-white shadow-2xl group-hover:rotate-6 transition-transform">
+                    <PhoneCall size={40} />
+                  </div>
+                  <div className="text-center">
+                    <span className="block text-blue-200 text-xs font-black uppercase tracking-[0.3em] mb-2">Priority Helpline</span>
+                    <span className="text-3xl font-black text-white tracking-tighter whitespace-nowrap">+1 (226) 319-1708</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

@@ -16,12 +16,30 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1e40af]/85 to-[#15803d]/85 z-0" />
                 <div className="absolute inset-0 bg-[url('/images/img-1581578731548-c64695cc6952.jpg')] bg-cover bg-center mix-blend-overlay z-0" />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
-                    <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Our Services</h1>
-                    <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base font-medium tracking-widest uppercase text-shadow-sm">
-                        <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                        <span className="text-white">/</span>
-                        <span className="text-white">Services</span>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div className="text-center lg:text-left flex-1">
+                        <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">Our Services</h1>
+                        <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300 text-sm md:text-base font-medium tracking-widest uppercase text-shadow-sm">
+                            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                            <span className="text-white">/</span>
+                            <span className="text-white">Services</span>
+                        </div>
+                    </div>
+
+                    {/* Right Side Phone Badge */}
+                    <div className="hidden lg:block animate-fade-in-right">
+                        <a 
+                            href="tel:+12263191708" 
+                            className="group flex items-center gap-6 bg-white/10 backdrop-blur-xl border border-white/20 p-4 pl-4 pr-10 rounded-2xl hover:bg-white/20 transition-all shadow-2xl"
+                        >
+                            <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform">
+                                <Phone size={24} fill="currentColor" />
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-blue-100/60 text-[10px] font-black uppercase tracking-[0.2em] mb-1">Expert Support</span>
+                                <span className="text-2xl font-black text-white tracking-tighter">+1 (226) 319-1708</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
