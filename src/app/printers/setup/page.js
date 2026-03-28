@@ -61,7 +61,7 @@ export default function PrinterSetupPage() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 py-4">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/printers/setup" className="flex items-center gap-2 group">
              <Image
                src="/images/Crosscity-logo.png"
                alt="Cross City"
@@ -285,15 +285,15 @@ export default function PrinterSetupPage() {
       {/* Simplified Footer */}
       <footer className="py-12 border-t border-slate-200 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
+          <Link href="/printers/setup" className="flex items-center gap-2 group transition-opacity hover:opacity-100 opacity-80">
             <Image 
               src="/images/Crosscity-logo.png" 
               alt="Cross City" 
               width={120} 
               height={30} 
-              className="object-contain opacity-80"
+              className="object-contain"
             />
-          </div>
+          </Link>
           
           <div className="flex gap-8 text-sm font-bold text-slate-500 uppercase tracking-widest">
             <Link href="/privacy-policy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link>
