@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <Script
           id="jivo-chat"
           strategy="afterInteractive"
-          src="//code.jivosite.com/widget/Kh9JPJLiMo"
+          src="//code.jivosite.com/widget/7XUZMLsOkY"
         />
       </body>
     </html>
