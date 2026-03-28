@@ -127,7 +127,7 @@ export default function PrinterSetupPage() {
           </div>
 
           {/* Right Side Prominent Phone Badge */}
-          <HeroPhoneBadge />
+          <HeroPhoneBadge theme="light" />
         </div>
       </section>
 
