@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // Metadata cannot be exported from a client component, so I'll move it to a separate layout if needed,
 // but for now, I'll just use document.title if it's a client component, or change it to a server component if possible.
 // Wait, I can't export metadata from 'use client'.
-// I'll create src/app/printers/setup/layout.js for the metadata.
+// I'll create src/app/printers/about/layout.js for the metadata.
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -61,7 +61,7 @@ export default function PrinterSetupPage() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <Link href="/printers/setup" className="flex items-center gap-2 group">
+          <Link href="/printers/about" className="flex items-center gap-2 group">
              <Image
                src="/images/Crosscity-logo.png"
                alt="Cross City"
@@ -316,7 +316,7 @@ export default function PrinterSetupPage() {
       {/* Simplified Footer */}
       <footer className="py-12 border-t border-slate-200 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <Link href="/printers/setup" className="flex items-center gap-2 group transition-opacity hover:opacity-100 opacity-80">
+          <Link href="/printers/about" className="flex items-center gap-2 group transition-opacity hover:opacity-100 opacity-80">
             <Image 
               src="/images/Crosscity-logo.png" 
               alt="Cross City" 
