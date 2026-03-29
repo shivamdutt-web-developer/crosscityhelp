@@ -216,11 +216,6 @@ export default function PrinterSetupPage() {
                     </div>
                   )}
                 </div>
-                
-                <h3 className="text-2xl font-bold text-slate-800 text-center mb-3 tracking-tight">{brand.name}</h3>
-                <div className="flex items-center justify-center gap-1 text-blue-600 font-bold text-sm uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity">
-                  Setup Brand <ChevronRight size={16} />
-                </div>
               </div>
             ))}
           </div>
