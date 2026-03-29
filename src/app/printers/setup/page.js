@@ -59,7 +59,7 @@ export default function PrinterSetupPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 py-4">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <Link href="/printers/setup" className="flex items-center gap-2 group">
              <Image
@@ -83,7 +83,7 @@ export default function PrinterSetupPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 sm:pb-24 overflow-hidden">
+      <section className="relative pt-32 pb-16 sm:pb-24 overflow-hidden">
         {/* Abstract Background Patterns */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[url('/images/printer-setup/hero-bg.png')] bg-cover bg-center opacity-10 blur-[100px]"></div>
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
