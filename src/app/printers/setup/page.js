@@ -27,6 +27,7 @@ const printerBrands = [
   { name: "Canon", icon: "/images/canon-printer.jpeg", color: "from-red-600 to-red-400" },
   { name: "Epson", icon: "/images/epson-printer.jpeg", color: "from-blue-800 to-blue-500" },
   { name: "Brother", icon: "/images/brother-printer.jpeg", color: "from-slate-800 to-slate-600" },
+  { name: "Other", icon: null, fallbackIcon: <Settings className="w-8 h-8" />, color: "from-emerald-600 to-emerald-400" },
 ];
 
 const setupSteps = [
