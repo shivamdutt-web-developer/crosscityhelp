@@ -172,7 +172,7 @@ export default function PrinterSetupPage() {
                       alt={brand.name} 
                       width={120} 
                       height={120} 
-                      className="object-contain group-hover:scale-110 transition-transform duration-500 grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100"
+                      className="object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                   ) : (
                     <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${brand.color} flex items-center justify-center text-white shadow-lg`}>
