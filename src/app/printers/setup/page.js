@@ -84,7 +84,7 @@ export default function PrinterSetupPage() {
 
       {/* Hero Section */}
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 sm:pb-24 lg:pb-32 overflow-hidden">
+      <section className="relative pt-40 pb-16 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
         {/* Modern Immersive Background */}
         <div className="absolute top-0 left-0 w-full h-full -z-20 bg-slate-50"></div>
         <div 
@@ -100,7 +100,7 @@ export default function PrinterSetupPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 xl:gap-24">
           {/* Left Column - Information & Search */}
           <div className="text-center lg:text-left animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600/10 rounded-full border border-blue-200 text-blue-700 text-[13px] font-black uppercase tracking-wider mb-8 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600/10 rounded-full border border-blue-200 text-blue-700 text-[13px] font-black uppercase tracking-wider mb-6 shadow-sm">
               <ShieldCheck size={16} className="text-blue-600" />
               <span>SECURE OFFICIAL DRIVERS & SUPPORT</span>
             </div>
@@ -110,13 +110,13 @@ export default function PrinterSetupPage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-emerald-500">In T-Minus 2 Minutes</span>
             </h1>
             
-            <p className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl text-slate-600 mb-10 leading-relaxed font-medium">
+            <p className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
               We provide expert-verified drivers and a step-by-step installation guide for every printer brand. Fast, secure, and hassle-free.
             </p>
 
-            <div className="max-w-2xl mx-auto lg:mx-0 relative group mb-12">
+            <div className="max-w-2xl mx-auto lg:mx-0 relative group mb-10">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative bg-white rounded-2xl p-2 sm:p-3 flex flex-col sm:flex-row items-center shadow-2xl border border-slate-100 ring-1 ring-slate-200/50">
+              <div className="relative bg-white rounded-2xl p-2 flex flex-col sm:flex-row items-center shadow-2xl border border-slate-100 ring-1 ring-slate-200/50">
                 <div className="flex flex-1 items-center w-full min-w-0 px-4">
                   <Search className="text-slate-400 shrink-0" size={20} />
                   <input 
@@ -127,7 +127,7 @@ export default function PrinterSetupPage() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
                 </div>
-                <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-xl font-black text-sm uppercase tracking-widest transition-all shadow-[0_10px_25px_-5px_rgba(37,99,235,0.4)] hover:shadow-[0_15px_35px_-10px_rgba(37,99,235,0.6)] active:scale-95 whitespace-nowrap">
+                <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-black text-sm uppercase tracking-widest transition-all shadow-lg active:scale-95 whitespace-nowrap">
                   Start FREE Setup
                 </button>
               </div>
@@ -143,23 +143,23 @@ export default function PrinterSetupPage() {
             </div>
           </div>
 
-          {/* Right Column - Balancing Illustration & CTA */}
-          <div className="relative animate-fade-in-right">
+          {/* Right Column - Compact Balancing */}
+          <div className="relative animate-fade-in-right flex flex-col items-center justify-center">
             <div className="absolute -inset-10 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
-            <div className="relative flex flex-col items-center gap-10">
+            <div className="relative flex flex-col items-center gap-6">
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/10 to-emerald-500/10 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 <Image 
                   src="/images/printer-setup/wizard-v2.png"
                   alt="Printer Setup Wizard"
-                  width={500}
-                  height={500}
-                  className="relative z-10 w-full max-w-[450px] xl:max-w-[500px] h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] group-hover:-translate-y-4 transition-transform duration-700 ease-out"
+                  width={400}
+                  height={400}
+                  className="relative z-10 w-full max-w-[300px] xl:max-w-[360px] h-auto drop-shadow-[0_20px_20px_rgba(0,0,0,0.1)] group-hover:-translate-y-2 transition-transform duration-700 ease-out"
                 />
               </div>
               
               {/* Call Badge - Vertically Aligned relative to illustration */}
-              <div className="w-full flex justify-center">
+              <div className="w-full flex justify-center scale-90 sm:scale-100">
                 <HeroPhoneBadge theme="light" />
               </div>
             </div>
