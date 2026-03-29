@@ -8,11 +8,11 @@ export default function FloatingContact() {
       <div className="fixed left-0 top-1/2 -translate-y-1/2 z-[60] hidden lg:block">
         <a 
           href="tel:+12263191708" 
-          className="bg-[#1e40af] text-white flex flex-col items-center gap-6 px-4 py-8 rounded-r-3xl shadow-2xl hover:bg-blue-700 transition-all hover:pl-6 group border-y border-r border-white/20"
-          style={{ writingMode: 'vertical-rl' }}
+          className="bg-[#1e40af] text-white flex items-center gap-4 px-3 py-10 rounded-r-3xl shadow-2xl hover:bg-blue-700 transition-all hover:pl-6 group border-y border-r border-white/20"
+          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
         >
           <Phone className="rotate-90 group-hover:scale-110 transition-transform" size={20} />
-          <span className="font-black tracking-[0.25em] text-lg md:text-xl whitespace-nowrap drop-shadow-md">
+          <span className="font-black tracking-[0.2em] text-base md:text-lg whitespace-nowrap drop-shadow-md">
             +1 (226) 319-1708
           </span>
         </a>
