@@ -22,7 +22,7 @@ export default function HeroPhoneBadge({ theme = "dark" }) {
           <div className="flex flex-col">
             <span className={`${
               isLight ? "text-blue-600/80" : "text-blue-200/80"
-            } text-[10px] xl:text-xs 2xl:text-sm font-black uppercase tracking-[0.3em] xl:tracking-[0.4em] mb-0.5 xl:mb-1 2xl:mb-3 drop-shadow-sm`}>Priority Helpline</span>
+            } text-[10px] xl:text-xs 2xl:text-sm font-black uppercase tracking-[0.3em] xl:tracking-[0.4em] mb-0.5 xl:mb-1 2xl:mb-3 drop-shadow-sm`}>Call on</span>
             <span className={`text-2xl xl:text-4xl 2xl:text-6xl font-black ${
               isLight ? "text-slate-900" : "text-white"
             } tracking-tighter whitespace-nowrap drop-shadow-2xl font-sans`}>+1 (226) 319-1708</span>
@@ -38,7 +38,7 @@ export default function HeroPhoneBadge({ theme = "dark" }) {
         >
           <Phone className="animate-pulse" size={24} />
           <div className="flex flex-col items-start">
-            <span className="text-[11px] font-black uppercase tracking-widest text-blue-100/80">Expert Support 24/7</span>
+            <span className="text-[11px] font-black uppercase tracking-widest text-blue-100/80">Call on</span>
             <span className="text-2xl font-black tracking-tight">+1 (226) 319-1708</span>
           </div>
         </a>
