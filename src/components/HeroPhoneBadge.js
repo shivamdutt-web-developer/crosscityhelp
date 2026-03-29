@@ -31,15 +31,17 @@ export default function HeroPhoneBadge({ theme = "dark" }) {
       </div>
 
       {/* Mobile/Tablet phone button - shows inline below hero text */}
-      <div className="lg:hidden w-full mt-6">
+      <div className="lg:hidden w-full mt-6 sm:mt-10">
         <a 
           href="tel:+12263191708" 
-          className="flex items-center justify-center gap-4 bg-blue-600 border border-blue-400/40 text-white px-6 py-4 rounded-2xl shadow-2xl hover:bg-blue-700 transition-all active:scale-95 w-full max-w-sm mx-auto"
+          className="flex items-center justify-center gap-3 sm:gap-4 bg-blue-600 border border-blue-400/40 text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl shadow-2xl hover:bg-blue-700 transition-all active:scale-95 w-full max-w-sm mx-auto group"
         >
-          <Phone className="animate-pulse" size={24} />
-          <div className="flex flex-col items-start">
-            <span className="text-[11px] font-black uppercase tracking-widest text-blue-100/80">Call on</span>
-            <span className="text-2xl font-black tracking-tight">+1 (226) 319-1708</span>
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0">
+            <Phone className="animate-pulse w-5 h-5 sm:w-6 sm:h-6" />
+          </div>
+          <div className="flex flex-col items-start translate-y-0.5">
+            <span className="text-[9px] sm:text-[11px] font-black uppercase tracking-widest text-blue-100/70 mb-0.5">Call on</span>
+            <span className="text-lg sm:text-2xl font-black tracking-tighter sm:tracking-tight">+1 (226) 319-1708</span>
           </div>
         </a>
       </div>

@@ -56,16 +56,16 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+          <nav className="hidden md:flex items-center gap-2 lg:gap-8">
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 <Link
                   href={link.href}
-                  className="text-sm md:text-base font-bold text-gray-900 hover:text-[#1e40af] transition-colors py-4 inline-flex items-center gap-1"
+                  className="text-[13px] lg:text-base font-bold text-gray-900 hover:text-[#1e40af] transition-colors py-4 inline-flex items-center gap-1"
                 >
                   {link.name}
                   {link.subLinks && (
-                    <svg className="w-4 h-4 text-gray-500 group-hover:text-[#1e40af]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-gray-500 group-hover:text-[#1e40af]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
@@ -96,7 +96,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <Link
               href="/catalog"
-              className="bg-[#1e40af] text-white hover:bg-[#1e3a8a] px-6 py-3 font-bold text-sm tracking-wider transition-colors"
+              className="bg-[#1e40af] text-white hover:bg-[#1e3a8a] px-4 lg:px-6 py-3 font-extrabold text-[12px] lg:text-sm tracking-widest transition-colors whitespace-nowrap"
             >
               OUR CATALOGUE
             </Link>

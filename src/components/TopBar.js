@@ -8,14 +8,16 @@ export default function TopBar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
 
                 {/* Contact Info */}
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4 sm:gap-6">
                     <a href="mailto:support@crosscityhelp.com" className="flex items-center gap-2 hover:text-gray-200 transition-colors">
-                        <Mail size={16} />
-                        <span className="hidden sm:inline">support@crosscityhelp.com</span>
+                        <Mail size={14} className="sm:w-4 sm:h-4" />
+                        <span className="hidden lg:inline">support@crosscityhelp.com</span>
+                        <span className="lg:hidden sm:inline hidden">Email Us</span>
                     </a>
                     <div className="flex items-center gap-2">
-                        <Clock size={16} />
-                        <span className="hidden md:inline">10:00 Am to 6:00 Pm Monday to Saturday</span>
+                        <Clock size={14} className="sm:w-4 sm:h-4" />
+                        <span className="hidden lg:inline">10:00 Am to 6:00 Pm Monday to Saturday</span>
+                        <span className="lg:hidden md:inline hidden">Mon-Sat 10:00-18:00</span>
                     </div>
                 </div>
 
