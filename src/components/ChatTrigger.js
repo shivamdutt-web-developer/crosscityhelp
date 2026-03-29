@@ -17,6 +17,10 @@ export default function ChatTrigger() {
         !target.getAttribute('href')
       );
 
+      // Special Case: NEVER trigger chat for 'tel:' links (phone calls)
+      const isTelLink = target.tagName === 'A' && target.getAttribute('href')?.startsWith('tel:');
+      if (isTelLink) return;
+
       // If it's NOT in Nav/Footer, trigger for EVERYTHING
       if (!isNavOrFooter) {
         if (window.jivo_api) {
