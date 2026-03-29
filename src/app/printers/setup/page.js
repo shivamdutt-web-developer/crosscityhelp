@@ -83,51 +83,87 @@ export default function PrinterSetupPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 sm:pb-24 overflow-hidden">
-        {/* Abstract Background Patterns */}
-        <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[url('/images/printer-setup/hero-bg.png')] bg-cover bg-center opacity-10 blur-[100px]"></div>
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-400/10 rounded-full blur-[150px] -z-10"></div>
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 sm:pb-24 lg:pb-32 overflow-hidden">
+        {/* Modern Immersive Background */}
+        <div className="absolute top-0 left-0 w-full h-full -z-20 bg-slate-50"></div>
+        <div 
+          className="absolute top-0 left-0 w-full h-full -z-10 bg-[url('/images/printer-setup/hero-bg-v2.png')] bg-cover bg-center opacity-30 blur-[2px]"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/60 via-transparent to-slate-50/90"></div>
+        
+        {/* Floating Abstract Shapes for Depth */}
+        <div className="absolute top-1/4 right-5 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-5 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10"></div>
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
-          <div className="text-center lg:text-left flex-1 lg:max-w-xl xl:max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100 text-blue-700 text-sm font-bold mb-6 sm:mb-8 animate-bounce">
-              <ShieldCheck size={16} />
-              <span>Secure Official Drivers & Software</span>
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 xl:gap-24">
+          {/* Left Column - Information & Search */}
+          <div className="text-center lg:text-left animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600/10 rounded-full border border-blue-200 text-blue-700 text-[13px] font-black uppercase tracking-wider mb-8 shadow-sm">
+              <ShieldCheck size={16} className="text-blue-600" />
+              <span>SECURE OFFICIAL DRIVERS & SUPPORT</span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-slate-900 mb-4 sm:mb-6 tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black text-slate-900 mb-6 tracking-tighter leading-[0.95] drop-shadow-sm">
               Setup Your Printer <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">In T-Minus 2 Minutes</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-emerald-500">In T-Minus 2 Minutes</span>
             </h1>
             
-            <p className="max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl text-slate-600 mb-8 sm:mb-12 leading-relaxed">
-              Download professional drivers, software, and firmware for all major brands. Get your printer running smoothly with our expert-verified setup guide.
+            <p className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl text-slate-600 mb-10 leading-relaxed font-medium">
+              We provide expert-verified drivers and a step-by-step installation guide for every printer brand. Fast, secure, and hassle-free.
             </p>
 
-            <div className="max-w-2xl mx-auto lg:mx-0 relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative bg-white rounded-2xl p-2 flex items-center shadow-xl border border-slate-100">
-                <Search className="ml-4 text-slate-400" />
-                <input 
-                  type="text" 
-                  placeholder="Enter printer model number" 
-                  className="w-full px-4 py-4 focus:outline-none text-lg text-slate-700 bg-transparent font-medium"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 whitespace-nowrap">
-                  Start Setup
+            <div className="max-w-2xl mx-auto lg:mx-0 relative group mb-12">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white rounded-2xl p-2 sm:p-3 flex flex-col sm:flex-row items-center shadow-2xl border border-slate-100 ring-1 ring-slate-200/50">
+                <div className="flex flex-1 items-center w-full min-w-0 px-4">
+                  <Search className="text-slate-400 shrink-0" size={20} />
+                  <input 
+                    type="text" 
+                    placeholder="Enter printer model (e.g., HP OfficeJet 4650)" 
+                    className="w-full px-4 py-4 focus:outline-none text-lg text-slate-800 bg-transparent font-semibold placeholder:text-slate-400"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
+                </div>
+                <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-xl font-black text-sm uppercase tracking-widest transition-all shadow-[0_10px_25px_-5px_rgba(37,99,235,0.4)] hover:shadow-[0_15px_35px_-10px_rgba(37,99,235,0.6)] active:scale-95 whitespace-nowrap">
+                  Start FREE Setup
                 </button>
               </div>
-              <p className="mt-4 text-sm text-slate-500 font-medium">
-                Model number is usually located on the front or back of your device.
-              </p>
+            </div>
+
+            {/* Trusted Brand Labels */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-40 hover:opacity-70 transition-opacity">
+              <span className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400 w-full lg:w-auto mb-4 lg:mb-0">TRUSTED BY USERS OF</span>
+              <img src="/images/printer-setup/hp.png" alt="HP" className="h-4 sm:h-5 grayscale" />
+              <img src="/images/printer-setup/canon.png" alt="Canon" className="h-4 sm:h-5 grayscale" />
+              <img src="/images/printer-setup/epson.png" alt="Epson" className="h-4 sm:h-5 grayscale" />
+              <img src="/images/printer-setup/brother.png" alt="Brother" className="h-4 sm:h-5 grayscale" />
             </div>
           </div>
 
-          {/* Right Side Prominent Phone Badge */}
-          <HeroPhoneBadge theme="light" />
+          {/* Right Column - Balancing Illustration & CTA */}
+          <div className="relative animate-fade-in-right">
+            <div className="absolute -inset-10 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
+            <div className="relative flex flex-col items-center gap-10">
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/10 to-emerald-500/10 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <Image 
+                  src="/images/printer-setup/wizard-v2.png"
+                  alt="Printer Setup Wizard"
+                  width={500}
+                  height={500}
+                  className="relative z-10 w-full max-w-[450px] xl:max-w-[500px] h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] group-hover:-translate-y-4 transition-transform duration-700 ease-out"
+                />
+              </div>
+              
+              {/* Call Badge - Vertically Aligned relative to illustration */}
+              <div className="w-full flex justify-center">
+                <HeroPhoneBadge theme="light" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
