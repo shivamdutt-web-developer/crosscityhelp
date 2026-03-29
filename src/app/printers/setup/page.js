@@ -23,10 +23,10 @@ import {
 import HeroPhoneBadge from "@/components/HeroPhoneBadge";
 
 const printerBrands = [
-  { name: "HP", icon: "/images/hp-printer.jpeg", color: "from-blue-600 to-blue-400" },
-  { name: "Canon", icon: "/images/canon-printer.jpeg", color: "from-red-600 to-red-400" },
-  { name: "Epson", icon: "/images/epson-printer.jpeg", color: "from-blue-800 to-blue-500" },
-  { name: "Brother", icon: "/images/brother-printer.jpeg", color: "from-slate-800 to-slate-600" },
+  { name: "HP", icon: "/images/printer-setup/hp.png", color: "from-blue-600 to-blue-400" },
+  { name: "Canon", icon: "/images/printer-setup/canon.png", color: "from-red-600 to-red-400" },
+  { name: "Epson", icon: "/images/printer-setup/epson.png", color: "from-blue-800 to-blue-500" },
+  { name: "Brother", icon: "/images/printer-setup/brother.png", color: "from-slate-800 to-slate-600" },
   { name: "Other", icon: null, fallbackIcon: <Settings className="w-8 h-8" />, color: "from-emerald-600 to-emerald-400" },
 ];
 
