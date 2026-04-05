@@ -73,7 +73,7 @@ export default function PrinterSetupPage() {
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600 uppercase tracking-wider">
             <Link href="#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
             <Link href="#how-to" className="hover:text-blue-600 transition-colors">Setup Guide</Link>
-            <Link href="#support" className="hover:text-blue-600 transition-colors text-blue-600 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">Live Support</Link>
+            <Link href="#support" className="hover:text-blue-600 transition-colors text-blue-600 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">Live Assistance</Link>
           </div>
           <a href="tel:+12263191708" className="flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-slate-800 transition-all hover:shadow-lg active:scale-95">
             <PhoneCall size={18} />
@@ -102,7 +102,7 @@ export default function PrinterSetupPage() {
           <div className="text-center lg:text-left animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/10 rounded-full border border-blue-200 text-blue-700 text-[11px] sm:text-[13px] font-black uppercase tracking-wider mb-6 shadow-sm">
               <ShieldCheck size={14} className="text-blue-600 sm:w-4 sm:h-4" />
-              <span>SECURE OFFICIAL DRIVERS & SUPPORT</span>
+              <span>SECURE OFFICIAL DRIVERS & ASSISTANCE</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-black text-slate-900 mb-6 tracking-tighter leading-[0.95] drop-shadow-sm">
@@ -172,7 +172,7 @@ export default function PrinterSetupPage() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { value: "1M+", label: "Success Setups", icon: <CheckCircle2 className="text-emerald-500" /> },
-            { value: "24/7", label: "Expert Support", icon: <Headphones className="text-blue-500" /> },
+            { value: "24/7", label: "Expert Assistance", icon: <Headphones className="text-blue-500" /> },
             { value: "100%", label: "Secure Download", icon: <ShieldCheck className="text-purple-500" /> },
             { value: "< 2m", label: "Avg. Setup Time", icon: <Clock className="text-orange-500" /> },
           ].map((stat, i) => (
@@ -280,7 +280,7 @@ export default function PrinterSetupPage() {
         </div>
       </section>
 
-      {/* Support CTA Section */}
+      {/* Assistance CTA Section */}
       <section id="support" className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[3rem] p-12 text-white text-center relative overflow-hidden shadow-2xl">
